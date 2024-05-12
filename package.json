@@ -18,5 +18,8 @@
   "homepage": "https://github.com/bsef19a531/email_service#readme",
   "dependencies": {
     "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "vercel": "^34.1.11"
   }
 }
