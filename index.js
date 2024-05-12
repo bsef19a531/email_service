@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
 const env = require('dotenv').config();
+const sendEmail = require('./sendEmail');
 
 // Configure Hostinger SMTP settings (replace with your credentials)
 const transporter = nodemailer.createTransport({
@@ -28,28 +29,5 @@ export default async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-}
-
-// Function to send email
-async function sendEmail(name, email, phone, service, message) {
-    const mailOptions = {
-        from: email, // Sender email
-        to: 'quatech.official@gmail.com',  // Recipient email (replace with actual address)
-        subject: `Contact Form Submission from ${name}`,
-        text: `
-      Name: ${name}
-      Email: ${email}
-      Phone: ${phone}
-      Service: ${service}
-      Message: ${message}
-    `
-    };
-
-    try {
-        const info = await transporter.sendMail(mailOptions);
-        console.log(`Email sent successfully: ${info.response}`);
-    } catch (error) {
-        console.error('Error sending email:', error);
-    }
 }
 
