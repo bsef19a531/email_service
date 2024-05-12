@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-const env = require('dotenv').config();
 const sendEmail = require('./sendEmail');
 
 // Configure Hostinger SMTP settings (replace with your credentials)
