@@ -14,7 +14,7 @@
     ],
 	"headers": [
     {
-      "source": "*", // Adjust if you want to restrict allowed origins
+      "source": "/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" }, // Adjust if you want to restrict allowed origins (replace "*" with specific origins)
         { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" }
