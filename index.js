@@ -53,11 +53,3 @@ async function sendEmail(name, email, phone, service, message) {
     }
 }
 
-// Example usage (assuming form data is retrieved elsewhere)
-const name = 'John Doe';
-const email = 'john.doe@example.com';
-const phone = '123-456-7890';
-const service = 'Web Development';
-const message = 'This is a test message';
-
-sendEmail(name, email, phone, service, message);
