@@ -9,8 +9,8 @@ const corsMiddleware = cors({
 });
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 587,  // Adjust if required based on Hostinger's configuration
-    secure: true, // Adjust based on Hostinger's authentication method (TLS/STARTTLS)
+    port: 587,
+    secure: true,
     auth: {
         user: 'quatech.official@gmail.com',
         pass: '$Fantastic4'
