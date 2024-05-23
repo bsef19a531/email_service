@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     secure: false,
     auth: {
         user: 'quatech.official@gmail.com',
-        pass: 'pass'  // Replace with your Gmail app password
+        pass: 'fzhcrzypiupozsip'
     }
 });
 
@@ -24,7 +24,7 @@ app.post('/', async (req, res) => {
     }
 
     const mailOptions = {
-        from: email,
+        from: 'quatech.official@gmail.com',
         to: 'quatech.official@gmail.com',
         subject: `Contact Form Submission from ${name}`,
         text: `
