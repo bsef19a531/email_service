@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     secure: false,
     auth: {
         user: 'quatech.official@gmail.com',
-        pass: '$Fantastic4'
+        pass: 'rdwxwspqfyaxfhbf'
     }
 });
 
