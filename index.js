@@ -25,7 +25,7 @@ export default async function handler(req, res) {
             return res.status(422).json({ error: 'All fields are required' });
         }
         try {
-            await sendEmail(name, email, phone, service, message);
+            await sendEmail(name, email, phone, service, message, transporter);
             return res.status(200).json({ message: 'Email sent successfully' });
         } catch (error) {
             return res.status(500).json({ error: `An error occurred while sending the email ${error}` });

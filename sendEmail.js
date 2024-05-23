@@ -1,5 +1,6 @@
 // Function to send email
-async function sendEmail(name, email, phone, service, message) {
+async function sendEmail(name, email, phone, service, message, transporter) {
+
     const mailOptions = {
         from: email, // Sender email
         to: 'quatech.official@gmail.com',  // Recipient email (replace with actual address)
